@@ -1,1 +1,9 @@
+stages:
+- name: compile
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: pxe-tftp/pxe-tftpv.1
+      registry: 127.0.0.1:34490
 timeout: 60
