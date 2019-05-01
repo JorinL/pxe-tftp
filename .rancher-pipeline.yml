@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: pxe-tftp/pxe-tftpv.1
+      tag: jorinl/pxe-tftp:pxe-tftpv.1
       pushRemote: true
       registry: index.docker.io
 timeout: 60
