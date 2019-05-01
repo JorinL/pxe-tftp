@@ -1,9 +1,10 @@
 stages:
-- name: compile
+- name: Construct and Publish Image
   steps:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: pxe-tftp/pxe-tftpv.1
+      pushRemote: true
       registry: 127.0.0.1:34490
 timeout: 60
