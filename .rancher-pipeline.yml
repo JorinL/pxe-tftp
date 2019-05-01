@@ -5,6 +5,7 @@ stages:
       dockerfilePath: ./Dockerfile
       buildContext: .
       tag: pxe-tftp/pxe-tftpv.1
-      pushRemote: true
       registry: 127.0.0.1:34490
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
