@@ -10,4 +10,4 @@ EXPOSE 69 69/udp
 EXPOSE 69 69/tcp
 
 
-ENTRYPOINT ["dnsmasq", "-k"]
+CMD ["dnsmasq"]
